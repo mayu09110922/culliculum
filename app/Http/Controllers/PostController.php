@@ -25,6 +25,7 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/' . $post->id);
     }
+<<<<<<< HEAD
     public function edit(Post $post)
     {
         return view('edit')->with(['post' => $post]);
@@ -35,4 +36,6 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/' . $post->id);
     }
+=======
+>>>>>>> master
 }
